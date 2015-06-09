@@ -2,30 +2,30 @@
 @logo-height:	50px;
 @logo-margin:	30px;
 #header { 
-	.container-fluid;
-	height: @header-height;
-	width: 100%;
-	.background-cover;
-	background-image: url('images/dna-orange.jpg');
+    .container-fluid;
+    height: @header-height;
+    width: 100%;
+    .background-cover;
+    background-image: url('images/dna-orange.jpg');
 }
 #navigation { .navbar; .navbar-default; .container-fluid; }
 // #brand { .navbar-brand; }
 #logo { 
-	height: @logo-height; 
-	width: auto; 
-	//margin-top: -@logo-height/2 + (@header-height - 2*@navbar-padding-vertical)/2;
-	margin: @logo-height/2 @logo-margin 0;
-	float: left;
+    height: @logo-height; 
+    width: auto; 
+    //margin-top: -@logo-height/2 + (@header-height - 2*@navbar-padding-vertical)/2;
+    margin: @logo-height/2 @logo-margin 0;
+    float: left;
 }
 .navbar { border: none; }
 #navigation-header { .navbar-header; }
 #navbar-list { .nav; }
 .caret { margin-left: 6px; }
 .dropdown-menu { 
-	border: none; 
-	background-color: @navbar-default-bg;
-	box-shadow: none;
-	> li > a { padding: 7px 20px; }
+    border: none; 
+    background-color: @navbar-default-bg;
+    box-shadow: none;
+    > li > a { padding: 7px 20px; }
 }
 
 @primary:        hsl(202, 100%, 50%);
