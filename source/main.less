@@ -1,21 +1,22 @@
 @header-height:	100px;
 @logo-height:	50px;
-@logo-margin:	30px;
+@logo-margin:	20px;
+@navbar-height:	40px;
+
 #header { 
     .container-fluid;
     height: @header-height;
     width: 100%;
     .background-cover;
-    background-image: url('images/dna-orange.jpg');
+    background-image: url('images/dna-grayscale.jpg');
 }
-#navigation { .navbar; .navbar-default; .container-fluid; }
-// #brand { .navbar-brand; }
+#navigation { .navbar; .navbar-default; .container-fluid; margin-bottom: 0; }
 #logo { 
     height: @logo-height; 
-    width: auto; 
-    //margin-top: -@logo-height/2 + (@header-height - 2*@navbar-padding-vertical)/2;
+	float: left;
     margin: @logo-height/2 @logo-margin 0;
-    float: left;
+	//display: block; //for centering
+	//margin: @logo-height/2 auto 0;
 }
 .navbar { border: none; }
 #navigation-header { .navbar-header; }
@@ -28,21 +29,18 @@
     > li > a { padding: 7px 20px; }
 }
 
-@primary:        hsl(202, 100%, 50%);
+#main-wrapper {
+	padding: 0 15%;
+	#main-content {
+		.make-row();
+		.jumbotron;
+	}
 
-// Primary Variants -
-@primaryLight:   hsl(hue(@primary), 100%, 70%);
-@primaryDark:    hsl(hue(@primary), 60%, 40%);
-@primaryFaded:   hsl(hue(@primary), 60%, 65%);
-
-// 180degree Variants
-@variant:         spin((@primary), 180);
-@variantLight:    hsl(hue(@variant), 100%, 70%);
-@variantDark:     hsl(hue(@variant), 60%, 40%);
-@variantFaded:    hsl(hue(@variant), 60%, 65%);
-
-// 90degree Variants
-@corner:         spin((@primary), 70);
-@cornerLight:    hsl(hue(@corner), 100%, 70%);
-@cornerDark:     hsl(hue(@corner), 60%, 40%);
-@cornerFaded:    hsl(hue(@corner), 60%, 65%);
+	#carousel {
+		margin:	0 15%;
+		img {
+			height: 300px;
+			margin: 0 auto;
+		}
+	}
+}
