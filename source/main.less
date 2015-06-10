@@ -4,43 +4,33 @@
 @navbar-height:	40px;
 
 #header { 
-    .container-fluid;
-    height: @header-height;
-    width: 100%;
-    .background-cover;
-    background-image: url('images/dna-orange.jpg');
+	.container-fluid;
+	height: @header-height;
+	width: 100%;
+	.background-cover;
+	background-image: url('images/dna-orange.jpg');
 }
-#navigation { .navbar; .navbar-default; .container-fluid; margin-bottom: 0; }
-#logo { 
-    height: @logo-height; 
-	float: left;
-    margin: @logo-height/2 @logo-margin 0;
-	//display: block; //for centering
-	//margin: @logo-height/2 auto 0;
-}
-.navbar { border: none; }
-#navigation-header { .navbar-header; }
-#navbar-list { .nav; }
-.caret { margin-left: 6px; }
-.dropdown-menu { 
-    border: none; 
-    background-color: @navbar-default-bg;
-    box-shadow: none;
-    > li > a { padding: 7px 20px; }
-}
-
 #main-wrapper {
-	padding: 0 20%;
-	#main-content {
-		.make-row();
-		.jumbotron;
-	}
+	.container-fluid;
+	#main-content { .make-row(); 
+		#left-content { .make-md-column(2); }
+		#carousel-container { 
+			.make-md-column(8);
+			.jumbotron; 
+			padding: 0 20%;
 
-	#carousel {
-		margin:	0 15%;
-		img {
-			height: 300px;
-			margin: 0 auto;
+			#carousel {
+				margin:	0 15%;
+				img {
+					margin: 0 auto;
+					height: 300px;
+				}
+			}
 		}
+		#right-content { .make-md-column(2); }
 	}
+}
+
+#footer {
+	background-color: @navbar-default-bg;
 }
