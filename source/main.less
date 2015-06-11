@@ -14,31 +14,28 @@ body {
 	width: 100%;
 	.background-cover;
 }
-#main-wrapper {
-	.container-fluid;
-	#main-content { .make-row(); 
-		#left-content { .make-md-column(1); }
-		#carousel-container {
-			.make-md-column(7);
-			.jumbotron; 
-			padding: 0 20%;
 
+.main-wrapper {
+	.container-fluid;
+	.main-content { //.make-row(); 
+		//#sidebar { .make-md-column(2); }
+		#carousel-container {
+			//.make-md-column(7);
+			margin: 20px 0;
 			#carousel {
-				margin:	0 15%;
-				img {
-					margin: 0 auto;
-				}
+				margin: 0 auto;
+				width: 70%;
+				img { margin: 0 auto; max-height: 400px; }
 			}
 		}
-		#right-content { 
-			.make-md-column(4); 
+		#news { 
 			div {
 				width: 90%; height: 100%;
-				margin: 20px auto;
+				margin: 0 auto 20px;
 				word-wrap: break-word;
 				background-color: rgba(255, 255, 255, .4);
 				border-radius: 10px;
-				font-weight: bold;
+				//font-weight: bold;
 				padding: 10px 15px;
 			}
 		}
