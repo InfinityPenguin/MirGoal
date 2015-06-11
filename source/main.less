@@ -16,9 +16,9 @@ body {
 }
 #main-wrapper {
 	.container-fluid;
-	.main-content { .make-row(); 
-		.left-content { .make-md-column(1); }
-		.center-content { 
+	#main-content { .make-row(); 
+		#left-content { .make-md-column(1); }
+		#carousel-container {
 			.make-md-column(7);
 			.jumbotron; 
 			padding: 0 20%;
@@ -30,7 +30,7 @@ body {
 				}
 			}
 		}
-		.right-content { 
+		#right-content { 
 			.make-md-column(4); 
 			div {
 				width: 90%; height: 100%;
