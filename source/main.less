@@ -17,9 +17,9 @@ body {
 #main-wrapper {
 	.container-fluid;
 	#main-content { .make-row(); 
-		#left-content { .make-md-column(2); }
+		#left-content { .make-md-column(1); }
 		#carousel-container { 
-			.make-md-column(8);
+			.make-md-column(7);
 			.jumbotron; 
 			padding: 0 20%;
 
@@ -27,11 +27,21 @@ body {
 				margin:	0 15%;
 				img {
 					margin: 0 auto;
-					height: 300px;
 				}
 			}
 		}
-		#right-content { .make-md-column(2); }
+		#right-content { 
+			.make-md-column(4); 
+			div {
+				width: 100%; height: 100%;
+				margin: 10px auto;
+				word-wrap: break-word;
+				background-color: white;
+				opacity: .4;
+				border-radius: 10px;
+				padding: 10px 15px;
+			}
+		}
 	}
 }
 
