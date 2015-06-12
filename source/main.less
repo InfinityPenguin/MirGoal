@@ -10,9 +10,16 @@ body {
 
 #header { 
 	.container-fluid;
-	height: @header-height;
-	width: 100%;
+	position: relative;
 	.background-cover;
+	height: @header-height; width: 100%;
+	#page-location {
+		position: absolute;
+		bottom: 0px; right: 30px; 
+		float: right;
+		font-size: 20px;
+		font-weight: bold;
+	}
 }
 
 .main-wrapper {
