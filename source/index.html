@@ -11,8 +11,6 @@
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 		<link href="style.css" rel="stylesheet">
-		<link href="slick/slick.css" rel="stylesheet">
-		<link href="slick/slick-theme.css" rel="stylesheet">
 
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -26,12 +24,12 @@
 	<body>
 		<div id="header">
 			<a href="index.html">
-				<img id="logo" alt="MirGoal" src="images/logo.png">
+				<!--<img id="logo" alt="MirGoal" src="images/logo.png"> -->
 			</a>
 		</div>
 		<nav id="navigation" class="no-radius">
 			<div id="navigation-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-content">
+				<button id="collapsed-toggler" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-content">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -42,12 +40,10 @@
 				<ul id="navbar-list" class="nav navbar-nav">
 					<li id="home" class="active"><a href="index.html">HOME</a></li>
 					<li id="about" class="dropdown">
-					<a href="about.html" role="button" class="dropdown-toggle" aria-expanded="false">ABOUT US<span class="caret"></span></a>
+					<a href="#" role="button" data-toggle="dropdown" role="button" class="dropdown-toggle" aria-expanded="false">ABOUT US<span class="caret"></span></a>
 					<ul id="about-menu" class="dropdown-menu" role="menu">
 						<li><a href="overview.html">Overview</a></li>
-						<li><a href="directors.html">Board of Directors</a></li>
-						<li><a href="management.html">Management</a></li>
-						<li><a href="advisors.html">Scientific Advisors</a></li>
+						<li><a href="staff.html">Staff Directory</a></li>
 					</ul>
 					</li>
 					<li id="Contact Us"><a href="contact.html">CONTACT</a></li>
@@ -83,7 +79,5 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="bootstrap/js/bootstrap.min.js"></script>
-		<script src="slick/slick.min.js"></script>
-		<script src="effects.js"></script>
 	</body>
 </html>
