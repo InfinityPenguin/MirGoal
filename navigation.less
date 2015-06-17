@@ -1,0 +1,28 @@
+#navigation { 
+	.navbar; .navbar-default; .container-fluid; 
+	margin-bottom: 0;
+	* { .transition(0.2s, ease-in); }
+}
+#logo { 
+    height: @logo-height; 
+	float: left;
+    margin: @logo-height/2 @logo-margin 0;
+	//display: block; //for centering
+	//margin: @logo-height/2 auto 0;
+}
+.navbar { 
+	border: none; 
+	border-radius: 0 !important;
+}
+#navbar-content {
+	ul > li > a { font-weight: normal; }
+	#navbar-list > #about-menu { .transition(0.2s, ease-in); }
+}
+#navigation-header { .navbar-header; }
+.caret { margin-left: 6px; }
+#about-menu {
+    border: none; 
+    background-color: @navbar-default-bg;
+    box-shadow: none;
+    > li > a { padding: 7px 20px; font-weight: normal; }
+}

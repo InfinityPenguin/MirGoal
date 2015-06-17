@@ -1,0 +1,67 @@
+.wordwrap-overflow {
+    white-space: nowrap; 
+	word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+//	https://gist.github.com/erikflowers/6710372 
+//	An easy way to include just super standard 1px text shadows. No frills.
+.textShadowBlack(@shadow: 0 1px 0px rgba(0,0,0,1)) {
+	text-shadow: @shadow;
+}
+.textShadowWhite(@shadow: 0 1px 0px rgba(255,255,255,1)) {
+	text-shadow: @shadow;
+}
+
+//	https://gist.github.com/erikflowers/6393836
+//  A Less mixin for layering 2 images in a background.  Good for scrolling fixed backgrounds where you want a screen or other element on top. 
+
+//	Use like this.  Don't forget the single quotes:
+//	.background-layers('the-top-image.png', 'the-bottom-image.jpg');
+.background-layers(@top, @bottom) {
+	background: url(@top), url(@bottom);
+	background-position: top center, top center;
+	background-attachment: fixed, fixed;
+	background-repeat: repeat, repeat;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	background-size: auto, cover;
+}
+
+// https://gist.github.com/erikflowers/5230313
+// CSS backgrounds will always be maximized
+.background-cover(@cover: cover) {
+	-webkit-background-size: @cover;
+	-moz-background-size: @cover;
+	-o-background-size: @cover;
+	background-size: @cover;
+}
+
+// https://gist.github.com/erikflowers/6710354
+//	Usage: .highlight(@yourColor, @white);
+.highlight(@backgroundColor, @textColor) {
+	::selection, -moz::selection {
+		background: @backgroundColor;
+		color: @textColor;
+	}
+}
+
+// https://gist.github.com/erikflowers/6710391 
+// Quick add no styles to a UL - either inline or block
+.ul-inline-no-style() {
+	margin: 0px;
+	list-style: none;
+	.clearfix;
+	li {
+		float: left;
+		display: block;
+	}
+}
+
+.ul-block-no-style() {
+	margin: 0px;
+	list-style: none;
+	.clearfix;
+}
