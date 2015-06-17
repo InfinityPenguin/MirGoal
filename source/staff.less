@@ -12,14 +12,17 @@
 			margin-right: 2%;
 		}
 		h4, h6 { line-height: 100%; display: inline-block; }
-		h6 { float: right; }
+		h6 { 
+			white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
+			display: block; max-width: 60%; float: right; 
+		}
 		height: 30px; 
 	}
 	.staff-profile {
 		border-top: 1px solid gainsboro; 
 		.make-row();
 		max-width: 100%;
-		margin: 0 auto;
+		margin: 2% auto 0;
 		padding: 15px 0px;
 		.staff-header {
 			.make-md-column(4);
